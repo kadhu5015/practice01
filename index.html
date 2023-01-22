@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>Eduardo Almeida</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-wrapper">
+
+           
+
+           
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"style="background-image: url(images/portfolio1.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src = "images/logos/crondose.png">
+                        </div>
+                        <div class="subtitle">
+                            Some image
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"style="background-image: url(images/portfolio2.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src = "images/logos/dailysmarty.png">
+                        </div>
+                        <div class="subtitle">
+                            another image
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"style="background-image: url(images/portfolio3.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src = "images/logos/dashtrack.png">
+                        </div>
+                        <div class="subtitle">
+                            another image
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"style="background-image: url(images/portfolio4.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src = "images/logos/devcamp.png">
+                        </div>
+                        <div class="subtitle">
+                            another image
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"style="background-image: url(images/portfolio5.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src = "images/logos/devcamp.png">
+                        </div>
+                        <div class="subtitle">
+                            another image
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+    </div>    
+
+</body>
+
+<script> 
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener ('mouseover', ()=>{
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener ('mouseout', ()=>{
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+       
+    })
+
+
+</script>
+
+</html>
